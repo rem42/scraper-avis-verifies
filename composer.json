@@ -1,0 +1,21 @@
+{
+  "name" : "rem42/scraper-avis-verifies",
+  "description" : "API Avis Verifies Scraper",
+  "license": "MIT",
+  "authors" : [{
+    "name" : "rem42",
+    "email" : "me@remy.ovh"
+  }],
+  "require" : {
+    "php": ">=5.5.9",
+    "doctrine/common": "^2.8",
+    "jms/serializer-bundle": "^2.0",
+    "symfony/css-selector" : "^4.0",
+    "rem42/scraper": "^1.0"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Scraper\\ScraperAvisVerifies\\" : ""
+    }
+  }
+}
