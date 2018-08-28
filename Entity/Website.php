@@ -67,6 +67,10 @@ class Website
 		$this->reviews = new ArrayCollection();
 	}
 
+	public function addReview(Review $review){
+		$this->reviews->add($review);
+	}
+
 	/**
 	 * @return string
 	 */
