@@ -1,16 +1,17 @@
 <?php
 
-namespace Scraper\ScraperAvisVerifies\Request;
+namespace Scraper\ScraperAvisVerifies\Tests\Request;
 
 use PHPUnit\Framework\TestCase;
 use Scraper\Scraper\Client;
 use Scraper\ScraperAvisVerifies\Entity\Website;
+use Scraper\ScraperAvisVerifies\Request\AvisVerifiesAvisClientsRequest;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
-class AvisVerifiesAvisClientsRequestTest extends TestCase
+final class AvisVerifiesAvisClientsRequestTest extends TestCase
 {
-    public function testAvisVerifiesAvisClientsRequest()
+    public function testAvisVerifiesAvisClientsRequest(): void
     {
         $responseInterface = $this->createMock(ResponseInterface::class);
         $responseInterface
@@ -33,7 +34,5 @@ class AvisVerifiesAvisClientsRequestTest extends TestCase
         $this->assertInstanceOf(Website::class, $result);
 
         $this->assertEquals('94768', $result->postalCode);
-
-        //dump($result);
     }
 }

@@ -7,7 +7,7 @@ use Scraper\Scraper\Annotation\Scraper;
 /**
  * @Scraper(path="/avis-clients/{website}")
  */
-class AvisVerifiesAvisClientsRequest extends AvisVerifiesRequest
+final class AvisVerifiesAvisClientsRequest extends AvisVerifiesRequest
 {
     protected string $website;
 

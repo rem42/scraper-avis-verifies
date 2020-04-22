@@ -2,7 +2,7 @@
 
 namespace Scraper\ScraperAvisVerifies\Entity;
 
-class Website
+final class Website
 {
     public string $address;
     public string $postalCode;
@@ -17,7 +17,7 @@ class Website
     public int $note;
     public int $bestRating;
     /** @var array<Review> */
-    public array $reviews;
+    public array $reviews = [];
 
     public function addReview(Review $review): self
     {

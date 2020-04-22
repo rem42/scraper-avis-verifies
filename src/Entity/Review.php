@@ -2,7 +2,7 @@
 
 namespace Scraper\ScraperAvisVerifies\Entity;
 
-class Review
+final class Review
 {
     public ?string $id;
     public int $rating;

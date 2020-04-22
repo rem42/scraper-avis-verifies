@@ -7,7 +7,7 @@ use Scraper\ScraperAvisVerifies\Entity\Review;
 use Scraper\ScraperAvisVerifies\Entity\Website;
 use Symfony\Component\DomCrawler\Crawler;
 
-class AvisVerifiesAvisClientsApi extends AbstractApi
+final class AvisVerifiesAvisClientsApi extends AbstractApi
 {
     public function execute(): Website
     {
