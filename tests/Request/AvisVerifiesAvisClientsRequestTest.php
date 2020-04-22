@@ -17,7 +17,7 @@ final class AvisVerifiesAvisClientsRequestTest extends TestCase
         $responseInterface
             ->method('getStatusCode')->willReturn(200);
         $responseInterface
-            ->method('getContent')->willReturn(file_get_contents('../Fixtures/darty.com.html'))
+            ->method('getContent')->willReturn(file_get_contents(dirname(__FILE__) . '../Fixtures/darty.com.html'))
         ;
         $httpClient = $this->createMock(HttpClientInterface::class);
         $httpClient
